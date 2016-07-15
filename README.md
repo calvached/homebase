@@ -1,12 +1,17 @@
 # Homebase
 Social tabletop gaming
 ## Ruby version
-Ruby 2.2.0
+Ruby 2.2.2
 
 ## Configuration
 Clone the repo then execute:
 ```
 bundle install
+```
+## Start up
+At the root directory execute:
+```
+rackup -p 4567
 ```
 ## Contributing
 1. Fork it
