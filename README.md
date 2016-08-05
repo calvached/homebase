@@ -8,10 +8,26 @@ Clone the repo then execute:
 ```
 bundle install
 ```
-## Start up
+## Setup Database
+```
+rake db:setup
+```
+## Starting App
 At the root directory execute:
 ```
 rackup -p 4567
+```
+## Console
+I use `tux` as an interactive console to test out associations and manipulate data using ActiveRecord.
+## Helpful tips
+### Postgres Commands
+Start manually:
+```
+pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
+```
+Stop manually:
+```
+pg_ctl -D /usr/local/var/postgres stop -s -m fast
 ```
 ## Contributing
 1. Fork it
